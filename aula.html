@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Aula</title>
+    </head>
+    <body>
+        <h1>Quanto vc tem</h1>
+        <h2>
+            Farinha (xícaras de chá)<input id="farinha" type="number">
+            <p></p>
+            Açúcar (xícaras de chá) <input id="acucar" type="number">
+            <p></p>
+            Leite (xícaras de chá)<input id="leite" type="number">
+            <p></p>
+            Ovos <input id="ovos" type="number">
+            <p></p>
+            Óleo (colheres de sopa)<input id="oleo" type="number">
+            <p></p>
+            Sal <input id="sal" type="number">
+            <p></p>
+            Fermento em pó <input id="fermento" type="number">
+        </h2>
+        <button onclick="funcao()">aaaa</button>
+        <h2>
+            <output id="resultado"></output>
+        </h2>
+
+
+        <script>
+            const arrayFixo = [
+                {
+                    nome: "Farinha de trigo",
+                    quantidade: 2
+                },
+                {
+                    nome: "Açucar",
+                    quantidade: 2
+                },
+                {
+                    nome: "Leite",
+                    quantidade: 1
+                },
+                {
+                    nome: "Ovos",
+                    quantidade: 2
+                },
+                {
+                    nome: "Óleo",
+                    quantidade: 4
+                },
+                {
+                    nome: "Sal",
+                    quantidade: 1
+                },
+                {
+                    nome: "Fermento em pó",
+                    quantidade: 1
+                }
+            ]
+
+            
+
+            function funcao(){
+                let farinhaTrigo = document.getElementById('farinha').value
+                let acucar = document.getElementById('acucar').value
+                let leite = document.getElementById('leite').value
+                let ovos = document.getElementById('ovos').value
+                let oleo = document.getElementById('oleo').value
+                let sal = document.getElementById('sal').value
+                let fermento = document.getElementById('fermento').value
+
+                const arraypessoa = [farinhaTrigo, acucar, leite, ovos, oleo, sal, fermento]
+                console.log(arraypessoa)
+
+            }
+
+
+            console.log(arrayFixo)
+        </script>
+    </body>
+</html>
